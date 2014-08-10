@@ -46,4 +46,12 @@ public class Util {
 		System.out.print("}");
 		System.out.print("\n");
 	}
+	
+	
+	public static <T,U> void compare(){
+		
+		// TODO Finish method
+		
+	}
+	
 }

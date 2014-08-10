@@ -34,9 +34,11 @@ public class Run {
 		
 		//String inputString = getStringInput();
 		
+		// TODO Finish changing so that the execute method is called
+		
 		Util.printArrayList(input);
-		Algorithm.selectionSort(input);
-
+		Sorter.selectionSort(input);
+		
 		Util.printArrayList(input);
 
 	}
