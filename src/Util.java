@@ -1,7 +1,18 @@
 import java.util.ArrayList;
 
-public class Util {
+	/**
+	 * Utility methods.
+	 * @author Andrew
+	 * @version 0.2
+	 */
 
+public class Util {
+	
+	/**
+	 * Prints out an ArrayList
+	 * @param al ArrayList to be printed
+	 */
+	
 	public static void printArrayList(ArrayList<?> al){
 		
 		System.out.print("\n");
@@ -25,6 +36,10 @@ public class Util {
 		
 	}
 
+	/**
+	 * Prints out an Array
+	 * @param arr Array to be printed
+	 */
 	
 	public static void printArray(int[] arr) {
 		
@@ -48,7 +63,7 @@ public class Util {
 	}
 	
 	
-	public static <T,U> void compare(){
+	public static <T> void compare(T a, T b){
 		
 		// TODO Finish method
 		

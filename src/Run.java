@@ -4,24 +4,12 @@ import java.util.*;
 //import java.util.Scanner;
 //import java.util.ArrayList;
 
-/*
- * Fix Null Pointer Exception:
+/**
+ * This class is a test program created to test the algorithms. It generates an
+ * ArrayList of numbers, sorts them, and prints them out.
  * 
- * Probably list.size() call
- * 
- * 
- * 
- * 1 2 4 6 7 1 5 1 456 45 21 78 546 456213 786 12 012 54670 1500
- * Exception in thread "main" java.lang.NullPointerException at Run.main(Run.java:51)
- * 
- * 
- * 
- * Fix Null Pointer Exception:
- * 
- * That means 
- * 
- * 
- * Exception in thread "main" java.lang.NullPointerException at Run.main(Run.java:63)
+ * @author Andrew
+ * @version 0.3
  * 
  */
 
@@ -31,20 +19,26 @@ public class Run {
 
 		ArrayList<Integer> input = getInput(16);
 
-		
-		//String inputString = getStringInput();
-		
+		// String inputString = getStringInput();
+
 		// TODO Finish changing so that the execute method is called
-		
+
 		Util.printArrayList(input);
 		Sorter.selectionSort(input);
-		
+
 		Util.printArrayList(input);
 
 	}
-	
-	public static ArrayList<Integer> getInput(int num){
-		
+
+	/**
+	 * Generates an ArrayList with random Integers.
+	 * 
+	 * @param num
+	 *            Number of Integers to be returned
+	 * @return ArrayList<Integer>
+	 */
+	public static ArrayList<Integer> getInput(int num) {
+
 		Random random = new Random();
 
 		ArrayList<Integer> ali = new ArrayList<Integer>();
@@ -52,31 +46,42 @@ public class Run {
 		for (int i = 0; i < num; i++) {
 
 			ali.add(random.nextInt(num));
-			
 
 		}
-		
+
 		return ali;
-		
+
 	}
-	
-	public static String getStringInput(){
-		
+
+	/**
+	 * Gets a string input from System.in
+	 * 
+	 * @return a string from System.in.
+	 * 
+	 */
+	public static String getStringInput() {
+
 		Scanner s = new Scanner(System.in);
 
 		String str = s.nextLine();
 
 		s.close();
-		
+
 		return str;
-		
+
 	}
-	
-	
-	public static ArrayList<Integer> getInput(String str){
-		
+
+	/**
+	 * Parses a string into an ArrayList
+	 * 
+	 * @param str
+	 * @return
+	 */
+
+	public static ArrayList<Integer> getInput(String str) {
+
 		ArrayList<Integer> ali = new ArrayList<Integer>();
-		
+
 		Scanner t = new Scanner(str);
 
 		while (t.hasNextInt()) {
@@ -86,26 +91,8 @@ public class Run {
 		}
 
 		t.close();
-		
+
 		return ali;
 	}
-	
-	
-	
-	
-	
-	
-	
+
 }
-
-
-
-
-
-
-
-
-/*
- * System.out.print("<Input>" + " "); String str1 = s.nextLine();
- * System.out.print("<Output>" + " "); System.out.println(str1);
- */

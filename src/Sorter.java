@@ -1,5 +1,15 @@
 import java.util.ArrayList;
 
+
+	/**
+	 * 
+	 * Contains code for sorting algorithms.
+	 * 
+	 * @author Andrew
+	 * @version 0.1
+	 * 
+	 */
+
 public class Sorter extends Algorithm {
 
 	@Override
@@ -8,6 +18,11 @@ public class Sorter extends Algorithm {
 		// TODO Auto-generated method stub
 		
 	}
+	
+	/**
+	 * Sorts an integer array.
+	 * @param arr Array to be sorted
+	 */
 	
 	public static void selectionSort(int[] arr) {
 
@@ -38,16 +53,20 @@ public class Sorter extends Algorithm {
 		}
 
 	}
-
 	
-	/*
-	public static void selectionSort(ArrayList<Integer> ali) {
-
+	/**
+	 * Sorts an ArrayList.
+	 * @param al ArrayList to be sorted
+	 */
+	
+	public static <T extends Comparable<T>> void selectionSort(ArrayList<T> al){
+		
 		int smallIndex;
 		int pass;
 		int j;
-		int length = ali.size();
-		int temp;
+		int length = al.size();
+		T temp;
+		
 
 		for (pass = 0; pass < length - 1; pass++) {
 
@@ -55,7 +74,7 @@ public class Sorter extends Algorithm {
 
 			for (j = pass + 1; j < length; j++) {
 
-				if (ali.get(j) < ali.get(smallIndex)) {
+				if (al.get(j).compareTo(al.get(smallIndex))<0) {
 
 					smallIndex = j;
 
@@ -63,18 +82,11 @@ public class Sorter extends Algorithm {
 
 			}
 
-			temp = ali.get(pass);
-			ali.set(pass, ali.get(smallIndex));
-			ali.set(smallIndex, temp);
+			temp = al.get(pass);
+			al.set(pass, al.get(smallIndex));
+			al.set(smallIndex, temp);
 
 		}
-
-	}
-	
-	*/
-	
-	public static <T> void selectionSort(ArrayList<T> al){
-		
 		
 		
 	}
