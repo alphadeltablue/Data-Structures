@@ -2,3 +2,5 @@
 **/*.class
 # Ignore /bin/ folder and all files inside
 /bin/**
+
+/.metadata/**
