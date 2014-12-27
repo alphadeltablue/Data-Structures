@@ -2,6 +2,10 @@ package algorithm;
 
 import java.util.ArrayList;
 
+/**
+ * @author andrew
+ *
+ */
 public class SequentialSearcher extends Searcher {
 	
 	
@@ -10,7 +14,7 @@ public class SequentialSearcher extends Searcher {
 	
 	/**
 	 * Concrete implementation of search. Calls sequentialSearch.
-	 * 
+	 *
 	 * @param al ArrayList to search
 	 * @param target target to search for
 	 */
@@ -23,7 +27,7 @@ public class SequentialSearcher extends Searcher {
 	/**
 	 * Searches an ArrayList for a target. Will only find the first. Does
 	 * not require ArrayList to be sorted.
-	 * 
+	 *
 	 * @param al	ArrayList to search
 	 * @param target	search target
 	 * @return Index of the target.
@@ -53,7 +57,7 @@ public class SequentialSearcher extends Searcher {
 	 * @param first	first index to search
 	 * @param last	last index to search
 	 * @param target	search target
-	 * @return
+	 * @return	i	index of target
 	 */
 	public static int sequentialSearch(int[] arr, int first, int last, int target) {
 		
@@ -72,7 +76,7 @@ public class SequentialSearcher extends Searcher {
 	}/**
 	 * Searches a subset of an ArrayList for a target. Will only find the
 	 * first. Does not require ArrayList to be sorted.
-	 * 
+	 *
 	 * @param al
 	 *            ArrayList to search
 	 * @param first

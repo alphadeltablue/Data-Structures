@@ -4,10 +4,14 @@ import java.util.ArrayList;
 
 import algorithm.SelectionSorter;
 
+/**
+ * @author andrew
+ *
+ */
 public class Tester {
 
 	/**
-	 * @param args
+	 * @param args arguments
 	 */
 	public static void main(String[] args) {
 
